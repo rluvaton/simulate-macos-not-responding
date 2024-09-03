@@ -9,14 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            VStack {
+                Text("Click the button to make the app unresponsive.")
+                Button("Make Unresponsive") {
+                    makeAppUnresponsive()
+                }
+            }
+            .padding()
         }
-        .padding()
-    }
+
+        func makeAppUnresponsive() {
+            // Simulate the app not responding
+            while true {
+                // Infinite loop causing the app to become unresponsive
+            }
+        }
+    
 }
 
 #Preview {
